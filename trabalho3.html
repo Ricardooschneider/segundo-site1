@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curso dos Aliens</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            background-image: url('https://memeexplicado.com/wp-content/uploads/2024/03/curso-capa-blog-1024x576.png');
+            background-size: cover; 
+            background-position: center; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; 
+            min-height: 100vh;
+            margin: 0;
+            text-align: center; 
+            font-family: 'Roboto', sans-serif; 
+            color: white; 
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            position: relative; 
+            z-index: 10;
+        }
+        .title-box {
+            background: rgba(0, 0, 0, 0.8); 
+            padding: 20px; 
+            border-radius: 10px; 
+            margin-bottom: 20px; 
+            margin-top: 80px; 
+        }
+        h1 {
+            margin: 0; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.8); 
+            width: 18rem;
+            margin: 20px auto; 
+            text-align: center; 
+            border-radius: 10px; 
+            padding: 20px; 
+        }
+        .card-title {
+            font-size: 1.5rem; 
+            color: red; 
+            font-weight: bold; 
+        }
+        .dropdown-menu {
+            display: none; 
+            background: rgba(0, 0, 0, 0.8); 
+            border-radius: 10px; 
+            margin-top: 20px; 
+            padding: 10px;
+            color: white; 
+        }
+        .dropdown-item {
+            color: white; 
+        }
+        .dropdown-item:hover {
+            background: rgba(255, 0, 0, 0.5); 
+        }
+        #toggle-menu {
+            background: rgb(234, 20, 20); 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            font-size: 1.2rem; 
+            margin-top: 20px; 
+            transition: background 0.3s; 
+        }
+        #toggle-menu:hover {
+            background: rgba(255, 0, 0, 0.7);
+        }
+        .btn-custom {
+            background: red; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 10px 30px; 
+            cursor: pointer; 
+            font-size: 1.2rem; 
+            margin: 10px;
+            transition: background 0.3s;
+        }
+        .btn-custom:hover {
+            background: rgba(255, 0, 0, 1);
+        }
+        .button-container {
+            padding: 40px 0;
+            width: 100%;
+            text-align: center;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.8); 
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao CURSOOOO!</h1>
+    </header>
+    
+    <div class="title-box">
+        <h2>Explore o universo dos aliens!</h2>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Sobre o curso</h5>
+            <p class="card-text">E aí, galera! Se liga nesse curso cabuloso sobre o universo dos aliens! Aqui, você vai aprender tudo sobre como se comunicar na língua dos ETs, que é cheia de sons e gírias que só quem é do rolê intergaláctico manja. Além disso, vamos te mostrar as manhas de como capturar um alien na moral, sem estresse! E não para por aí: se você sempre sonhou em dar uns "beijos cósmicos", a gente vai te ensinar como conquistar o coração de um alienígena. Prepare-se para desbravar o amor fora da Terra e ser o mestre das interações extraterrestres! Vem com a gente que a parada vai ser sinistra!</p>
+        </div>
+    </div>
+
+    <button id="toggle-menu">Acessar Menu</button>
+    <ul class="dropdown-menu" id="dropdown-menu" style="list-style: none; padding: 0;">
+        <li><h6 class="dropdown-header">Ações do Curso</h6></li>
+        <li><a class="dropdown-item" href="#">Aprender a Língua dos Aliens</a></li>
+        <li><a class="dropdown-item" href="#">Como Capturar um Alien</a></li>
+        <li><a class="dropdown-item" href="#">Dicas para Namorar um Alien</a></li>
+    </ul>
+
+    <div class="button-container">
+        <button class="btn-custom" onclick="window.location.href='trabalho.html'">Se cadastre aqui</button>
+        <button class="btn-custom" onclick="window.location.href='trabalho4.html'">Fazer Login</button>
+        <button class="btn-custom" onclick="window.location.href='trabalho2.html'">Acessar os cursos</button>
+    </div>
+
+    <script>
+        document.getElementById('toggle-menu').addEventListener('click', function() {
+            const menu = document.getElementById('dropdown-menu');
+            menu.style.display = menu.style.display === 'none' || menu.style.display === '' ? 'block' : 'none';
+        });
+    </script>
+    <footer>
+        <p>&copy; 2024 Curso dos Aliens. Todos os direitos reservados.</p>
+        <p>Para mais informações, entre em contato: <a href="mailto:contato@cursodosaliens.com" style="color: #ff0;">contato@cursodosaliens.com</a></p>
+        <p>Siga-nos nas redes sociais: 
+            <a href="#" style="color: #ff0;">Facebook</a>, 
+            <a href="#" style="color: #ff0;">Twitter</a>, 
+            <a href="#" style="color: #ff0;">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>
